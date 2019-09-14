@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<title>Card Layout Component</title>
+<link rel="stylesheet" href="https://entrusters.com/templates/yoo_moustache/css/theme.css">
+<link rel="stylesheet" href="https://entrusters.com/modules/mod_entrusters_shopbyurl/css/urldata.previewer.min.css">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+ <link rel="stylesheet" href="css/list.css" />
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js">
+ </script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+ </script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js">
+ </script>
+ <script src="js/list.js">
+ </script>
+
+ <!--  -->
+ <link
+ rel="stylesheet"
+ type="text/css"
+ href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+/>
+<link
+ rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+ crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="css/main.css" />
+
+ <!--  -->
+</head>
+<body>
+    <div class=" bg-dark text-white" >
+        <p  class="text-center">SFSU CSC648-01 Software Engineering Spring 2019 class Project </p>
+      </div>
+    <!-- navbar begin -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top py-2">
+      
+                <a class="navbar-brand" href="#">
+                  <h1>Gator-Housing</h1>
+                </a>
+                <div class="myform">
+                  <form class="form-inline my-2  d-flex">
+                      <div class="nav-item dropdown updated">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarResponsive"
+                  aria-controls="navbarResponsive"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="ui inverted violet button d-flex" href="index.html">
+                            <i class="home icon"></i>
+                            Home
+                          </a>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class=" ui inverted purple button d-flex"
+                        href="registration.html"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        
+                        >
+                        <i class="add user icon" ></i>
+                        Sign In</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+          
+    </nav>
+    <!-- navbar end -->
+
+    <!-- login -->
+    <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+                <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+              </p>
+              <p class="divider-text  tex-center">
+                    <span class="bg-light">OR</span>
+                </p>
+          <form class="ui form">
+            <div class="field">
+              <label>E-Mail Address</label>
+              <input type="email" name="email" placeholder="E-Mail Address" />
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <button class="ui blue button" type="submit">Sign In</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          Don't Have an Account ?
+          </button>
+          <a href="#"  data-toggle="modal"
+          data-target="#exampleModal2" data-dismiss="modal" aria-label="Close">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    </div> 
+    <!-- end login -->
+ 
+    <!-- sign up -->
+    <div class="modal fade " id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                 
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card bg-light">
+                        <article class="card-body mx-auto" style="max-width: 400px;">
+                          <h4 class="card-title mt-3 text-center">Create Account</h4>
+                          <p class="text-center">Get started with your free account</p>
+                          <p>
+                            <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+                            <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+                          </p>
+                          <p class="divider-text  tex-center">
+                                <span class="bg-light">OR</span>
+                            </p>
+                          <form>
+                          <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                             </div>
+                                <input name="" class="form-control" placeholder="Full name" type="text">
+                            </div> 
+                            
+                            <div class="form-group input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                             </div>
+                                <input name="" class="form-control" placeholder="Email address" type="email">
+                            </div> 
+                            <div class="form-group input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                            </div>
+                            <select class="custom-select" style="max-width: 120px;">
+                                <option selected="">+1</option>
+                                <option value="1">+972</option>
+                                <option value="2">+198</option>
+                                <option value="3">+701</option>
+                            </select>
+                              <input name="" class="form-control" placeholder="Phone number" type="text">
+                            </div>
+                            <div class="form-group input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                            </div>
+                            <select class="form-control">
+                              <option selected=""> Sign up as</option>
+                              <option>Home owner</option>
+                              <option>Manager</option>
+                              <option>Renter</option>
+                            </select>
+                          </div> 
+                            <div class="form-group input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                                <input class="form-control" placeholder="Create password" type="password">
+                            </div> 
+                            <div class="form-group input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                                <input class="form-control" placeholder="Repeat password" type="password">
+                            </div>                                      
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+                            </div>    
+                            <p class="text-center">Have an account? <a href=""  data-toggle="modal"
+                              data-target="#exampleModal" data-dismiss="modal" aria-label="Close">Log In</a> </p>                                                                 
+                        </form>
+                        </article>
+                        </div>
+                </div>
+              </div>
+            </div>
+    </div>
+    <!-- sign up -->
+
+  	<main class="cd-main-content">
+  		<div class="cd-tab-filter-wrapper">
+  			<div class="cd-tab-filter">
+  				
+  			</div> <!-- cd-tab-filter -->
+  		</div> <!-- cd-tab-filter-wrapper -->
+      
+  		<section class="cd-gallery">
+  			<ul>
+  				<li class="mix ">
+            <div class="card">
+	             <img class="card-img-top" src="img/about.jpg" alt="Card image cap">
+	              <div class="card-body">
+                        <div class="list">Distaance from SFSU </div>
+                        <div class="list"><i class="fas fa-dollar-sign"></i> Price</div>
+                        <div class="list"><i class="fas fa-bed"></i> Bed Room</div>
+                        <div class="list"><i class="fas fa-toilet"></i> Bath Room</div>
+                        <div class="text-center"><button type="button" class="btn btn-primary  btn-md" onclick="openForm()">Contact Landlord</button></div> 
+                    </div>
+          </li>
+          <li class="mix color-2 check2 radio2 option2">
+              <div class="card">
+                <img class="card-img-top" src="img/bg_1.jpg" alt="Card image cap">
+                <div class="card-body">
+                      <div class="list">Distaance from SFSU </div>
+                      <div class="list"><i class="fas fa-dollar-sign"></i> Price</div>
+                      <div class="list"><i class="fas fa-bed"></i> Bed Room</div>
+                      <div class="list"><i class="fas fa-toilet"></i> Bath Room</div>
+                      <div class="text-center"><button type="button" class="btn btn-primary  btn-md">Contact Landlord</button></div> 
+                </div>
+              </div>
+            </li>
+            <li class="mix color-1 check3 radio3 option1">
+              <div class="card">
+                <img class="card-img-top" src="img/bg_2.jpg" alt="Card image cap">
+                <div class="card-body">
+                      <div class="list">Distaance from SFSU </div>
+                      <div class="list"><i class="fas fa-dollar-sign"></i> Price</div>
+                      <div class="list"><i class="fas fa-bed"></i> Bed Room</div>
+                      <div class="list"><i class="fas fa-toilet"></i> Bath Room</div>
+                      
+                      <div class="text-center"><button type="button" class="btn btn-primary  btn-md">Contact Landlord</button></div> 
+                </div>
+              </div>
+            </li>
+            <li class="mix color-1 check3 radio2 option4">
+              <div class="card">
+                <img class="card-img-top" src="img/about.jpg" alt="Card image cap">
+                <div class="card-body">
+                      <div class="list">Distaance from SFSU </div>
+                      <div class="list"><i class="fas fa-dollar-sign"></i> Price</div>
+                      <div class="list"><i class="fas fa-bed"></i> Bed Room</div>
+                      <div class="list"><i class="fas fa-toilet"></i> Bath Room</div>
+                      
+                      <div class="text-center"><button type="button" class="btn btn-primary  btn-md">Contact Landlord</button></div> 
+                </div>
+              </div>
+            </li>
+            <li class="mix color-1 check1 radio3 option2">
+              <div class="card">
+                <img class="card-img-top" src="img/bg_1.jpg" alt="Card image cap">
+                <div class="card-body">
+                          <div class="list">Distaance from SFSU </div>
+                          <div class="list"><i class="fas fa-dollar-sign"></i> Price</div>
+                          <div class="list"><i class="fas fa-bed"></i> Bed Room</div>
+                          <div class="list"><i class="fas fa-toilet"></i> Bath Room</div>
+                          <div class="text-center"><button type="button" class="btn btn-primary  btn-md">Contact Landlord</button></div> 
+                </div>
+              </div>
+            </li>
+            <li class="mix color-2 check2 radio3 option3">
+              <div class="card">
+                <img class="card-img-top" src="img/bg_2.jpg" alt="Card image cap">
+                <div class="card-body">
+                      <div class="list">Distaance from SFSU </div>
+                      <div class="list "><i class="fas fa-dollar-sign"></i> Price</div>
+                      <div class="list "><i class="fas fa-bed "></i> Bed Room</div>
+                      <div class="list " ><i class="fas fa-toilet"></i> Bath Room</div>
+                    
+                      <div class="text-center"><button type="button" class="btn btn-primary  btn-md">Contact Landlord</button></div> 
+                </div>
+              </div>
+            </li>
+            <!-- <li class="mix color-2 check2 radio2 option1"><img src="img/about.jpg" alt="Image 7"></li>
+            <li class="mix color-1 check1 radio3 option4"><img src="img/bg_1.jpg" alt="Image 8"></li>
+            <li class="mix color-2 check1 radio2 option3"><img src="img/bg_2.jpg" alt="Image 9"></li>
+            <li class="mix color-1 check3 radio2 option4"><img src="img/bg_1.jpg" alt="Image 10"></li>
+            <li class="mix color-1 check3 radio3 option2"><img src="img/bg_2.jpg" alt="Image 11"></li>
+            <li class="mix color-2 check1 radio3 option1"><img src="img/about.jpg" alt="Image 12"></li> -->
+            <li class="gap"></li>
+            <li class="gap"></li>
+            <li class="gap"></li>
+  			
+  			</ul>
+        <button class="uk-button uk-button-large uk-button-outline ladda-button uk-width-1-1"><i class="uk-icon uk-icon-plus"></i> SHOW MORE</button>
+  			<div class="cd-fail-message">No results found</div>
+      </section> <!-- cd-gallery -->
+      
+
+      
+        <!-- Fillter Page  -->
+  		<div class="cd-filter">
+  			<form>
+
+  				<div class="cd-filter-block">
+  					<h4>Filter by ZipCode </h4>
+
+  					<div class="cd-filter-content">
+  						<input type="search" placeholder="zip-code">
+  					</div> <!-- cd-filter-content -->
+  				</div> <!-- cd-filter-block -->
+                
+                  <div class="cd-filter-block">
+                        <h4>Filter by price</h4>
+  
+                        <div class="cd-filter-content min-max">
+                            
+                            <input type="number"  placeholder="min" class="text-center">
+                            <input type="number" placeholder="max" class="text-center" >
+                        
+                        </div> <!-- cd-filter-content -->
+                    </div> <!-- cd-filter-block -->
+  				
+  				<div class="cd-filter-block">
+                        <h4>BedRoom</h4>
+  
+                        <div class="cd-filter-content">
+                            
+                            <input type="number" class="text-center">
+                        
+                        </div> <!-- cd-filter-content -->
+                    </div> <!-- cd-filter-block -->
+
+  				<div class="cd-filter-block">
+  					<h4>BathRoom</h4>
+
+  					<div class="cd-filter-content">
+  						
+  						<input type="number" class="text-center">
+  					
+  					</div> <!-- cd-filter-content -->
+  				</div> <!-- cd-filter-block -->
+
+
+  			</form>
+
+        <a href="#0" class="cd-close"><i class="icon ent-close"></i> close </a>
+  		</div> <!-- cd-filter -->
+
+  		<a href="#0" class="cd-filter-trigger">Filters</a>
+  	</main> <!-- cd-main-content -->
+
+<!-- footer -->
+<footer>
+        <div class ="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class = "light">
+            <p>5555-555</p>
+            <p>email@gmail.com</p>
+            <p>1200 Holway strat</p>
+            <p>San Francsco, Ca</p>
+          </div>
+          <div class="col-md-4">
+            <hr class="light">
+            <h5>Our hours</h5>
+            <hr class="light">
+            <p>Monday: 9am - 5pm</p>
+            <p>Satarday: closed</p>
+  
+          </div>
+          <div class="col-md-4">
+              <hr class="light">
+              <h5>Our hours</h5>
+              <hr class="light">
+              <p>Monday: 9am - 5pm</p>
+              <p>Satarday: closed</p>
+  
+            </div>
+          <div class="col-12">
+            <hr class="light">
+            <h5>&comp: W3oajfooasj@jdosajo</h5>
+          </div>
+        </div>
+        </div>
+      </footer>
+<!-- footer end -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<!--Javascript code to contact landlord-->
+<script>
+  function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+  </script>
+<!-- jquary -->
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"
+></script>
+<script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"
+></script>
+<!-- end jquary -->
+
+</body>
+</html>
